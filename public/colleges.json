@@ -1,0 +1,248 @@
+[
+  {
+    "college_image": "https://images.unsplash.com/photo-1532649538693-f3a2ec1bf8bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "college_name": "College A",
+    "college_rating": 4.5,
+    "admission_dates": "August 1 - August 15",
+    "admission_process": "Online application and entrance exam",
+    "events": ["Orientation Day", "Cultural Fest", "Science Fair"],
+    "events_details": [
+      "Orientation Day: August 20, 2023",
+      "Cultural Fest: September 10-12, 2023",
+      "Science Fair: October 5, 2023"
+    ],
+    "research_count": 120,
+    "research_works": [
+      "Artificial Intelligence in Healthcare",
+      "Renewable Energy Technologies",
+      "Climate Change Mitigation",
+      "Urban Planning and Sustainability"
+    ],
+    "research_paper_links": [
+      "http://example.com/ai_healthcare_paper",
+      "http://example.com/renewable_energy_paper",
+      "http://example.com/climate_change_paper",
+      "http://example.com/urban_planning_paper"
+    ],
+    "sports_categories": ["Football", "Basketball", "Swimming", "Tennis"],
+    "reviews": [
+      {
+        "username": "student123",
+        "rating": 4,
+        "comment": "Great college with excellent faculty!",
+        "date": "2023-07-18"
+      },
+      {
+        "username": "prospect456",
+        "rating": 3.5,
+        "comment": "Good college, but needs more sports facilities.",
+        "date": "2023-07-20"
+      }
+    ]
+  },
+  {
+    "college_image": "https://images.unsplash.com/photo-1622604647545-0cada2f34470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=875&q=80",
+    "college_name": "College B",
+    "college_rating": 4.2,
+    "admission_dates": "September 1 - September 30",
+    "admission_process": "Online application and interview",
+    "events": ["Freshers' Party", "Tech Fest", "Literary Week"],
+    "events_details": [
+      "Freshers' Party: September 15, 2023",
+      "Tech Fest: October 20-22, 2023",
+      "Literary Week: November 5-8, 2023"
+    ],
+    "research_count": 85,
+    "research_works": [
+      "Machine Learning Applications",
+      "Environmental Sustainability",
+      "Social Sciences Research",
+      "Biotechnology Advancements"
+    ],
+    "research_paper_links": [
+      "http://example.com/ml_applications_paper",
+      "http://example.com/environmental_sustainability_paper",
+      "http://example.com/social_sciences_paper",
+      "http://example.com/biotech_advancements_paper"
+    ],
+    "sports_categories": ["Cricket", "Badminton", "Athletics", "Volleyball"],
+    "reviews": [
+      {
+        "username": "newstudent789",
+        "rating": 4.5,
+        "comment": "Amazing college campus and friendly atmosphere!",
+        "date": "2023-06-30"
+      },
+      {
+        "username": "visitor987",
+        "rating": 3.8,
+        "comment": "Decent college, but could improve research facilities.",
+        "date": "2023-07-10"
+      }
+    ]
+  },
+  {
+    "college_image": "https://images.unsplash.com/photo-1577985043696-8bd54d9f093f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "college_name": "College c",
+    "college_rating": 4.2,
+    "admission_dates": "September 1 - September 30",
+    "admission_process": "Online application and interview",
+    "events": ["Freshers' Party", "Tech Fest", "Literary Week"],
+    "events_details": [
+      "Freshers' Party: September 15, 2023",
+      "Tech Fest: October 20-22, 2023",
+      "Literary Week: November 5-8, 2023"
+    ],
+    "research_count": 85,
+    "research_works": [
+      "Machine Learning Applications",
+      "Environmental Sustainability",
+      "Social Sciences Research",
+      "Biotechnology Advancements"
+    ],
+    "research_paper_links": [
+      "http://example.com/ml_applications_paper",
+      "http://example.com/environmental_sustainability_paper",
+      "http://example.com/social_sciences_paper",
+      "http://example.com/biotech_advancements_paper"
+    ],
+    "sports_categories": ["Cricket", "Badminton", "Athletics", "Volleyball"],
+    "reviews": [
+      {
+        "username": "newstudent789",
+        "rating": 4.5,
+        "comment": "Amazing college campus and friendly atmosphere!",
+        "date": "2023-06-30"
+      },
+      {
+        "username": "visitor987",
+        "rating": 3.8,
+        "comment": "Decent college, but could improve research facilities.",
+        "date": "2023-07-10"
+      }
+    ]
+  },
+  {
+    "college_image": "https://images.unsplash.com/flagged/photo-1554473675-d0904f3cbf38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "college_name": "College d",
+    "college_rating": 4.2,
+    "admission_dates": "September 1 - September 30",
+    "admission_process": "Online application and interview",
+    "events": ["Freshers' Party", "Tech Fest", "Literary Week"],
+    "events_details": [
+      "Freshers' Party: September 15, 2023",
+      "Tech Fest: October 20-22, 2023",
+      "Literary Week: November 5-8, 2023"
+    ],
+    "research_count": 85,
+    "research_works": [
+      "Machine Learning Applications",
+      "Environmental Sustainability",
+      "Social Sciences Research",
+      "Biotechnology Advancements"
+    ],
+    "research_paper_links": [
+      "http://example.com/ml_applications_paper",
+      "http://example.com/environmental_sustainability_paper",
+      "http://example.com/social_sciences_paper",
+      "http://example.com/biotech_advancements_paper"
+    ],
+    "sports_categories": ["Cricket", "Badminton", "Athletics", "Volleyball"],
+    "reviews": [
+      {
+        "username": "newstudent789",
+        "rating": 4.5,
+        "comment": "Amazing college campus and friendly atmosphere!",
+        "date": "2023-06-30"
+      },
+      {
+        "username": "visitor987",
+        "rating": 3.8,
+        "comment": "Decent college, but could improve research facilities.",
+        "date": "2023-07-10"
+      }
+    ]
+  },
+  {
+    "college_image": "https://images.unsplash.com/photo-1569447891824-7a1758aa73a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80",
+    "college_name": "College e",
+    "college_rating": 4.2,
+    "admission_dates": "September 1 - September 30",
+    "admission_process": "Online application and interview",
+    "events": ["Freshers' Party", "Tech Fest", "Literary Week"],
+    "events_details": [
+      "Freshers' Party: September 15, 2023",
+      "Tech Fest: October 20-22, 2023",
+      "Literary Week: November 5-8, 2023"
+    ],
+    "research_count": 85,
+    "research_works": [
+      "Machine Learning Applications",
+      "Environmental Sustainability",
+      "Social Sciences Research",
+      "Biotechnology Advancements"
+    ],
+    "research_paper_links": [
+      "http://example.com/ml_applications_paper",
+      "http://example.com/environmental_sustainability_paper",
+      "http://example.com/social_sciences_paper",
+      "http://example.com/biotech_advancements_paper"
+    ],
+    "sports_categories": ["Cricket", "Badminton", "Athletics", "Volleyball"],
+    "reviews": [
+      {
+        "username": "newstudent789",
+        "rating": 4.5,
+        "comment": "Amazing college campus and friendly atmosphere!",
+        "date": "2023-06-30"
+      },
+      {
+        "username": "visitor987",
+        "rating": 3.8,
+        "comment": "Decent college, but could improve research facilities.",
+        "date": "2023-07-10"
+      }
+    ]
+  },
+  {
+    "college_image": "https://images.unsplash.com/photo-1583397234747-ff3708fef61a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80",
+    "college_name": "College f",
+    "college_rating": 4.2,
+    "admission_dates": "September 1 - September 30",
+    "admission_process": "Online application and interview",
+    "events": ["Freshers' Party", "Tech Fest", "Literary Week"],
+    "events_details": [
+      "Freshers' Party: September 15, 2023",
+      "Tech Fest: October 20-22, 2023",
+      "Literary Week: November 5-8, 2023"
+    ],
+    "research_count": 85,
+    "research_works": [
+      "Machine Learning Applications",
+      "Environmental Sustainability",
+      "Social Sciences Research",
+      "Biotechnology Advancements"
+    ],
+    "research_paper_links": [
+      "http://example.com/ml_applications_paper",
+      "http://example.com/environmental_sustainability_paper",
+      "http://example.com/social_sciences_paper",
+      "http://example.com/biotech_advancements_paper"
+    ],
+    "sports_categories": ["Cricket", "Badminton", "Athletics", "Volleyball"],
+    "reviews": [
+      {
+        "username": "newstudent789",
+        "rating": 4.5,
+        "comment": "Amazing college campus and friendly atmosphere!",
+        "date": "2023-06-30"
+      },
+      {
+        "username": "visitor987",
+        "rating": 3.8,
+        "comment": "Decent college, but could improve research facilities.",
+        "date": "2023-07-10"
+      }
+    ]
+  }
+]
