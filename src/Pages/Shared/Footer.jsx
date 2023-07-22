@@ -7,9 +7,9 @@ const Footer = () => {
       <div>
       <Link to='/' className=""><img className="h-16" src={logo} alt="" /></Link>
         <p>
-          ACME Industries Ltd.
+          CollegeClutch Ltd.
           <br />
-          Providing reliable tech since 1992
+          Providing reliable college booking service since 2023
         </p>
       </div>
       <div>
