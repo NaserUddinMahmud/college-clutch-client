@@ -13,13 +13,13 @@ const Colleges = () => {
 
     return (
         <div>
-            <div >
+            <div className="mt-4 mb-2">
                 <h2 className="text-center text-3xl font-semibold">Colleges</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-6">
                 
                 {
-                    colleges.map(college => <CollegeCard
+                    colleges.slice(0, 3).map(college => <CollegeCard
                     key={college.college_name}
                     college={college}
                     ></CollegeCard>)
