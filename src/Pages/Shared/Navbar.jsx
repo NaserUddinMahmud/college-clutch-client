@@ -1,14 +1,39 @@
 import { Link } from "react-router-dom";
-import logo from '../../assets/logo.png'
+import logo from "../../assets/logo.png";
+import { useContext } from "react";
+import { AuthContext } from "../../Context/AuthProvider";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
-    const navItems = <>
-    <li><Link to="/">Home</Link></li>
-    <li><Link>Colleges</Link></li>
-    <li><Link>Admission</Link></li>
-    <li><Link>My College</Link></li>
-    
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        Swal.fire({
+          icon: "info",
+          title: "You Have Logged Out!",
+        });
+      })
+      .catch((error) => console.error(error));
+  };
+
+  const navItems = (
+    <>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link>Colleges</Link>
+      </li>
+      <li>
+        <Link>Admission</Link>
+      </li>
+      <li>
+        <Link>My College</Link>
+      </li>
     </>
+  );
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -34,22 +59,33 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             {navItems}
-            
           </ul>
         </div>
-        <Link to='/' className=""><img className="h-16" src={logo} alt="" /></Link>
+        <Link to="/" className="">
+          <img className="h-16" src={logo} alt="" />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-        {navItems}
-         
-        </ul>
+        <ul className="menu menu-horizontal px-1">{navItems}</ul>
       </div>
       <div className="navbar-end">
-      <Link to="/login" className="btn btn-accent btn-sm ">
-              
+        {user ? (
+          <div className="flex flex-col-reverse md:flex-row justify-center items-center">
+          <div>
+          {/* <button className="btn btn-ghost btn-xs">{user.displayName}</button> */}
+          <a className="link link-accent mx-2">{user.displayName}</a>
+          </div>
+            <button onClick={handleLogOut} className="btn btn-accent btn-sm">
+              logout
+            </button>
+          </div>
+        ) : (
+          <>
+            <Link to="/login" className="btn btn-accent btn-sm ">
               Login
             </Link>
+          </>
+        )}
       </div>
     </div>
   );
