@@ -29,8 +29,8 @@ const Research = () => {
             </thead>
             <tbody>
               {/* row 2 */}
-              {colleges.map((college, index) => (
-                <tr key={index} className="hover">
+              {colleges.map((college) => (
+                <tr key={college._id} className="hover">
                   <td>{college.college_name}</td>
                   <td>
                     {college.research_works.map((work, index) => (

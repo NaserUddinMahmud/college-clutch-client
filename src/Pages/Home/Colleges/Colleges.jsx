@@ -20,7 +20,7 @@ const Colleges = () => {
                 
                 {
                     colleges.slice(0, 3).map(college => <CollegeCard
-                    key={college.college_name}
+                    key={college._id}
                     college={college}
                     ></CollegeCard>)
                 }
