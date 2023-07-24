@@ -34,11 +34,13 @@ const Research = () => {
                   <td>{college.college_name}</td>
                   <td>
                     {college.research_works.map((work, index) => (
-                      <Link key={index}><li>{work}</li></Link>
+                         <li key={index}>{work}</li>
+
+                      
                     ))}
                   </td>
                   <td>{college.research_paper_links.map((work, index) => (
-                      <li key={index}>{work}</li>
+                      <Link className="link link-primary hover:link-accent" key={index}><li className="list-none">{work}</li></Link>
                     ))}</td>
                 </tr>
               ))}

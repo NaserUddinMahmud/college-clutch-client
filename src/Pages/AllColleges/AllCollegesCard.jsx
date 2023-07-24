@@ -17,7 +17,7 @@ const AllCollegesCard = ({college}) => {
         <img src={college_image} alt="Shoes" className="rounded-xl" />
       </figure>
       <div className="card-body items-center text-center">
-        <h2 className="card-title">{college_name}</h2>
+        <h2 className="card-title font-bold">{college_name}</h2>
         <div>
     <Rating style={{ maxWidth: 120 }} value={college_rating} readOnly />
     </div>

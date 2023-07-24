@@ -3,7 +3,7 @@ import AllCollegesCard from "./AllCollegesCard";
 
 const AllColleges = () => {
     const colleges = useLoaderData();
-    console.log(colleges);
+    
     return (
         <div>
             <div className="mt-4 mb-2">

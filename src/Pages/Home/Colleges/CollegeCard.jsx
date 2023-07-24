@@ -15,7 +15,7 @@ const CollegeCard = ({ college }) => {
         <img src={college_image} alt="Shoes" className="rounded-xl" />
       </figure>
       <div className="card-body items-center text-center">
-        <h2 className="card-title">{college_name}</h2>
+        <h2 className="card-title font-extrabold mb-3">{college_name}</h2>
         <p>
           <span className="font-bold">Admission Dates: </span>
           {admission_dates}
