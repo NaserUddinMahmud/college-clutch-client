@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
+import Swal from "sweetalert2";
 
 const AdmissionForm = () => {
   const college = useLoaderData();
@@ -29,7 +30,7 @@ const AdmissionForm = () => {
         address
     }
     console.log(booking);
-    fetch('http://localhost:5000/booking',{
+    fetch('https://college-clutch-server.vercel.app/booking',{
         method: 'POST',
         headers:{
             'content-type': 'application/json'
@@ -39,6 +40,14 @@ const AdmissionForm = () => {
     .then(res => res.json())
     .then(data => {
         console.log(data);
+        if (data.insertedId) {
+            Swal.fire({
+              title: "Success!",
+              text: "Your college is booked successfully",
+              icon: "success",
+              confirmButtonText: "OK",
+            });
+          }
     })
   }
   return (

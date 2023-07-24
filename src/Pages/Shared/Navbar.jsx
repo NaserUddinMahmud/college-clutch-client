@@ -30,7 +30,7 @@ const Navbar = () => {
         <Link to="/admission">Admission</Link>
       </li>
       <li>
-        <Link>My College</Link>
+        <Link to="/booking">My College</Link>
       </li>
     </>
   );

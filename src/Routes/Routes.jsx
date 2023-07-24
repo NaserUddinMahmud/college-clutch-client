@@ -7,11 +7,14 @@ import CollegeDetails from "../Pages/CollegeDetails/CollegeDetails";
 import AllColleges from "../Pages/AllColleges/AllColleges";
 import Admission from "../Pages/Admission/Admission";
 import AdmissionForm from "../Pages/Admission/AdmissionForm";
+import MyCollege from "../Pages/MyCollege/MyCollege";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
             path: '/',
@@ -28,22 +31,27 @@ const router = createBrowserRouter([
         {
             path: '/collegeDetails/:id',
             element: <CollegeDetails></CollegeDetails>,
-            loader: ({params}) => fetch(`http://localhost:5000/colleges/${params.id}`)
+            loader: ({params}) => fetch(`https://college-clutch-server.vercel.app/colleges/${params.id}`)
         },
         {
             path: '/colleges',
             element:<AllColleges></AllColleges>,
-            loader: () => fetch('http://localhost:5000/colleges')
+            loader: () => fetch('https://college-clutch-server.vercel.app/colleges')
         },
         {
             path: '/admission',
             element:<Admission></Admission>,
-            loader: () => fetch('http://localhost:5000/colleges')
+            loader: () => fetch('https://college-clutch-server.vercel.app/colleges')
         },
         {
             path: '/admissionForm/:id',
             element: <AdmissionForm></AdmissionForm>,
-            loader: ({params}) => fetch(`http://localhost:5000/colleges/${params.id}`)
+            loader: ({params}) => fetch(`https://college-clutch-server.vercel.app/colleges/${params.id}`)
+        },
+        {
+            path: '/booking',
+            element: <MyCollege></MyCollege>,
+            
         }
       ]
     },
