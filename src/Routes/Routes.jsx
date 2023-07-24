@@ -9,6 +9,7 @@ import Admission from "../Pages/Admission/Admission";
 import AdmissionForm from "../Pages/Admission/AdmissionForm";
 import MyCollege from "../Pages/MyCollege/MyCollege";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -50,7 +51,7 @@ const router = createBrowserRouter([
         },
         {
             path: '/booking',
-            element: <MyCollege></MyCollege>,
+            element: <PrivateRoute><MyCollege></MyCollege></PrivateRoute>
             
         }
       ]

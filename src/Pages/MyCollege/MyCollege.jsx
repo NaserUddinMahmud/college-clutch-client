@@ -3,7 +3,7 @@ import { AuthContext } from "../../Context/AuthProvider";
 
 
 const MyCollege = () => {
-  const { user, isLoading } = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
 
   const [booking, setBooking] = useState([]);
 
