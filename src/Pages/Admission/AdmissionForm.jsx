@@ -5,7 +5,7 @@ import { AuthContext } from "../../Context/AuthProvider";
 const AdmissionForm = () => {
   const college = useLoaderData();
   const { user } = useContext(AuthContext);
-  const { _id, college_name } = college;
+  const { college_name } = college;
 
   const handleSubmit = event =>{
     event.preventDefault();
@@ -21,15 +21,25 @@ const AdmissionForm = () => {
     const booking = {
         candidateName: name,
         subject,
-        collegeId: _id,
+        college: college,
         email,
         phone,
         birthDate,
         photo,
         address
     }
-
     console.log(booking);
+    fetch('http://localhost:5000/booking',{
+        method: 'POST',
+        headers:{
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(booking)
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+    })
   }
   return (
     <div className=" px-24 pb-8">
